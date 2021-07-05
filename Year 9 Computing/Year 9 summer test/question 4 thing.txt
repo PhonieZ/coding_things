@@ -1,0 +1,32 @@
+#global variables
+year = 0            
+strYear = ""        
+#main program
+
+# Input                 Output
+# -----------------------------------------
+# 0                     Exits program
+# 1, 2, 3, 4, 5, 6      Primary
+# 7, 8, 9, 10, 11       Secondary
+# 12, 13                College
+
+strYear = input("Enter year group (1 to 13, 0 to exit)")
+year = int(strYear)
+while (year != 0):
+  if (year < 1):
+    print ("Year too small")
+  elif (year > 13):
+    print ("Year too big")
+  elif (year < 7):
+    print ("Primary")
+  elif (year < 12):
+    print ("Secondary")
+  else:
+    print ("College")
+  strYear = input("Enter year group (1 to 13, 0 to exit)")
+  year = int (strYear)
+
+
+
+
+
